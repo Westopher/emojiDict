@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,6 +36,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXh-ee-TV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zni-mQ-K9C">
+            <objects>
+                <viewController id="fi5-QY-sQM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6o-l9-cmy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgC-ku-oms">
+                                <rect key="frame" x="63.5" y="40" width="248" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="228"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKx-xc-YNb">
+                                <rect key="frame" x="10" y="636" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2yJ-oG-g3M" firstAttribute="bottom" secondItem="dKx-xc-YNb" secondAttribute="bottom" constant="10" id="2aX-1h-6lv"/>
+                            <constraint firstItem="dKx-xc-YNb" firstAttribute="leading" secondItem="2yJ-oG-g3M" secondAttribute="leading" constant="10" id="99J-GH-HkM"/>
+                            <constraint firstItem="hgC-ku-oms" firstAttribute="centerX" secondItem="O6o-l9-cmy" secondAttribute="centerX" id="BXL-a9-DUv"/>
+                            <constraint firstItem="hgC-ku-oms" firstAttribute="top" secondItem="2yJ-oG-g3M" secondAttribute="top" constant="20" id="BcM-4c-QZd"/>
+                            <constraint firstItem="2yJ-oG-g3M" firstAttribute="trailing" secondItem="dKx-xc-YNb" secondAttribute="trailing" constant="10" id="a1e-hJ-S0C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2yJ-oG-g3M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldw-Ox-e3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.5999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
