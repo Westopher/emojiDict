@@ -9,6 +9,11 @@
 import UIKit
 
 class EomjiTableViewController: UITableViewController {
+    
+    var emojis = ["🇦🇽", "🇦🇹", "🇧🇪", "🇨🇦", "🇨🇮", "🇩🇪", "🇿🇦", "🇺🇸", "🇪🇸", "🇬🇧", "🇲🇰", "🇯🇲", "🇫🇷", "🇮🇱", "🇬🇭", "🇩🇰", "🇨🇿", "🇭🇷"]
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +32,8 @@ class EomjiTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
         cell.textLabel?.text = "Hello World"
+
+        
 
         return cell
     }
