@@ -10,12 +10,25 @@ import UIKit
 
 class EmojiDefinitionViewController: UIViewController {
 
+    @IBOutlet var emojiLabel: UILabel!
+    
+    @IBOutlet var emojiDefinition: UILabel!
+    
     var emoji = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(emoji)
+        emojiLabel.text = emoji
+        
+        if  emoji == "🇺🇸" {
+            
+            emojiDefinition.text = "USA"
+            
+        } else {
+            
+            emojiDefinition.text = "Not USA, so who cares?"
+        }
         
     }
 }
