@@ -33,7 +33,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Emoji Dictionary" id="1Ti-wQ-Ksq">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="7Q1-lM-DSe"/>
+                        <barButtonItem key="backBarButtonItem" title="back" id="7Q1-lM-DSe"/>
                     </navigationItem>
                     <connections>
                         <segue destination="fi5-QY-sQM" kind="show" identifier="ourSegue" id="6Cf-Kx-Plf"/>
