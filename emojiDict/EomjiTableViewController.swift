@@ -10,10 +10,11 @@ import UIKit
 
 class EomjiTableViewController: UITableViewController {
     
-    var emojis = ["🇦🇽", "🇦🇹", "🇧🇪", "🇨🇦", "🇨🇮", "🇩🇪", "🇿🇦", "🇺🇸", "🇪🇸", "🇬🇧", "🇲🇰", "🇯🇲", "🇫🇷", "🇮🇱", "🇬🇭", "🇩🇰", "🇨🇿", "🇭🇷"]
+    var emojis : [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emojis = createEmojis()
         
     }
 
@@ -26,7 +27,9 @@ class EomjiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
-        cell.textLabel?.text = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
+        
+        cell.textLabel?.text = "\(emoji.emojiDefinition) - \(emoji.emojiLabel)"
         
         print(indexPath.row)
 
@@ -46,6 +49,24 @@ class EomjiTableViewController: UITableViewController {
        let emojiDefVC = segue.destination as! EmojiDefinitionViewController
         emojiDefVC.emoji = sender as! String
         
+    }
+    
+    func createEmojis() -> [Emoji] {
+        let Iceland = Emoji()
+        Iceland.emojiDefinition = "🇦🇽"
+        Iceland.birthLabel = 1
+        Iceland.continent = "Europe"
+        Iceland.emojiLabel = "Iceland"
+        
+        let USA = Emoji()
+        USA.emojiDefinition = "🇺🇸"
+        USA.birthLabel = 1776
+        USA.continent = "North America - Yea!"
+        USA.emojiLabel = "United States of America"
+        
+        
+        return [Iceland, USA]
+
     }
 
 }
