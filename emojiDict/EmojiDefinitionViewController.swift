@@ -16,15 +16,20 @@ class EmojiDefinitionViewController: UIViewController {
     
     @IBOutlet var emojiDefinition: UILabel!
     
-    var emoji = ""
+    var emoji = Emoji()
+    
     
     /*
-    var emojis = ["🇦🇽", "🇦🇹", "🇧🇪", "🇨🇦", "🇨🇮", "🇩🇪", "🇿🇦", "🇺🇸", "🇪🇸", "🇬🇧", "🇲🇰", "🇯🇲", "🇫🇷", "🇮🇱", "🇬🇭", "🇩🇰", "🇨🇿", "🇭🇷"]
+     var emojis = ["🇦🇽", "🇦🇹", "🇧🇪", "🇨🇦", "🇨🇮", "🇩🇪", "🇿🇦", "🇺🇸", "🇪🇸", "🇬🇧", "🇲🇰", "🇯🇲", "🇫🇷", "🇮🇱", "🇬🇭", "🇩🇰", "🇨🇿", "🇭🇷"]
      */
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emojiLabel.text = emoji.emojiDefinition
+        
 
+        /*
         emojiLabel.text = emoji
         
         if  emoji == "🇺🇸" {
@@ -37,7 +42,11 @@ class EmojiDefinitionViewController: UIViewController {
             continent.text = "Continent: Not USA, so who cares?"
             birthLabel.text = "Independence Day: Not USA, so who cares?"
             
-        }
-        
+     }
+     
+     }
+        */
+    
     }
+    
 }
