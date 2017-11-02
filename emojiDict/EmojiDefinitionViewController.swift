@@ -30,8 +30,7 @@ class EmojiDefinitionViewController: UIViewController {
         continent.text = "Continent: \(emoji.continent)"
         birthLabel.text = "Birth Year: \(emoji.birthLabel)"
         emojiDefinition.text = "Country Name: \(emoji.emojiLabel)"
-        
-        
+
     }
     
 }

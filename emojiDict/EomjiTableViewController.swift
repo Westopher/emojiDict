@@ -19,9 +19,7 @@ class EomjiTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return emojis.count
-
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,13 +29,10 @@ class EomjiTableViewController: UITableViewController {
         
         cell.textLabel?.text = "\(emoji.emojiDefinition) - \(emoji.emojiLabel)"
         
-        print(indexPath.row)
-
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let emoji = emojis[indexPath.row]
         
         performSegue(withIdentifier: "ourSegue", sender: emoji)
@@ -45,7 +40,6 @@ class EomjiTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
        let emojiDefVC = segue.destination as! EmojiDefinitionViewController
         emojiDefVC.emoji = sender as! Emoji
         
