@@ -9,18 +9,11 @@
 import UIKit
 
 class Emoji {
-//    var theEmoji = ""
-//    var def = ""
-//    var birthYear = 0
-//    var category = ""
-//
-    
     var continent = ""
     var birthLabel = 0
     var emojiLabel = ""
-    
     var emojiDefinition = ""
-    
+
 }
 
 

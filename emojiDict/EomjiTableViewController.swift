@@ -61,7 +61,7 @@ class EomjiTableViewController: UITableViewController {
         let USA = Emoji()
         USA.emojiDefinition = "🇺🇸"
         USA.birthLabel = 1776
-        USA.continent = "North America - Yea!"
+        USA.continent = "North America"
         USA.emojiLabel = "United States of America"
         
         

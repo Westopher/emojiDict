@@ -27,26 +27,11 @@ class EmojiDefinitionViewController: UIViewController {
         super.viewDidLoad()
         
         emojiLabel.text = emoji.emojiDefinition
+        continent.text = "Continent: \(emoji.continent)"
+        birthLabel.text = "Birth Year: \(emoji.birthLabel)"
+        emojiDefinition.text = "Country Name: \(emoji.emojiLabel)"
         
-
-        /*
-        emojiLabel.text = emoji
         
-        if  emoji == "🇺🇸" {
-            emojiDefinition.text = "Country Name: USA"
-            continent.text = "Continent: North America"
-            birthLabel.text = "Independence Day: July 4th, 1776"
-            
-        } else {
-            emojiDefinition.text = "Country Name: Not USA, so who cares?"
-            continent.text = "Continent: Not USA, so who cares?"
-            birthLabel.text = "Independence Day: Not USA, so who cares?"
-            
-     }
-     
-     }
-        */
-    
     }
     
 }
