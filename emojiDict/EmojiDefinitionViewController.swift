@@ -10,11 +10,17 @@ import UIKit
 
 class EmojiDefinitionViewController: UIViewController {
 
+    @IBOutlet var continent: UILabel!
+    @IBOutlet var birthLabel: UILabel!
     @IBOutlet var emojiLabel: UILabel!
     
     @IBOutlet var emojiDefinition: UILabel!
     
     var emoji = ""
+    
+    /*
+    var emojis = ["🇦🇽", "🇦🇹", "🇧🇪", "🇨🇦", "🇨🇮", "🇩🇪", "🇿🇦", "🇺🇸", "🇪🇸", "🇬🇧", "🇲🇰", "🇯🇲", "🇫🇷", "🇮🇱", "🇬🇭", "🇩🇰", "🇨🇿", "🇭🇷"]
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +28,15 @@ class EmojiDefinitionViewController: UIViewController {
         emojiLabel.text = emoji
         
         if  emoji == "🇺🇸" {
-            
-            emojiDefinition.text = "USA"
+            emojiDefinition.text = "Country Name: USA"
+            continent.text = "Continent: North America"
+            birthLabel.text = "Independence Day: July 4th, 1776"
             
         } else {
+            emojiDefinition.text = "Country Name: Not USA, so who cares?"
+            continent.text = "Continent: Not USA, so who cares?"
+            birthLabel.text = "Independence Day: Not USA, so who cares?"
             
-            emojiDefinition.text = "Not USA, so who cares?"
         }
         
     }

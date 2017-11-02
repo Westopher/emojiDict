@@ -91,6 +91,8 @@
                         <viewLayoutGuide key="safeArea" id="2yJ-oG-g3M"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="kMU-Rt-weL" id="cOo-8S-Vj8"/>
+                        <outlet property="continent" destination="ovO-7m-GGl" id="r1A-os-DWY"/>
                         <outlet property="emojiDefinition" destination="dKx-xc-YNb" id="NUF-Ew-R67"/>
                         <outlet property="emojiLabel" destination="hgC-ku-oms" id="gkm-eK-bMa"/>
                     </connections>
